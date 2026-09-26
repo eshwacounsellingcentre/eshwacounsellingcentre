@@ -62,7 +62,7 @@
          
           <article class="card reveal delay-1">
             <span class="eyebrow">Contact</span>
-            <h3>+91 9686926262</h3>
+            <h3><a href="tel:+919686926262">+91 9686926262</a></h3>
           </article>
 
           <article class="card reveal delay-1">
@@ -79,27 +79,66 @@
               <span class="chip">Chandapura</span>
               <span class="chip">Electronic City</span>
               <span class="chip">KR Puram</span>
-              <span class="chip">Jalahalli</span>
+              <span class="chip">Nagasandra</span>
             </div>
           </article>
         </div>
 
         <article class="card qr-card reveal delay-2">
-          <span class="eyebrow">Book Appointment</span>
+          <span class="eyebrow">Instagram page</span>
           <img src="assets/qr.png" alt="Scan to connect with ESHWA Counselling Centre" />
-          <p>Scan to connect and schedule your appointment.</p>
-          <a class="btn btn-primary" href="mailto:eshwa.counsellingcentre@gmail.com">Request Appointment</a>
+          <p>Scan to connect.</p>
         </article>
       </div>
     </section>
 
-    <section class="section soft-section">
-      <div class="container cta-banner reveal">
-        <div>
-          <span class="eyebrow">A calm space awaits</span>
-          <h2>You don’t have to do it alone.</h2>
+    <section class="section soft-section contact-form-section" id="appointment-inquiry">
+      <div class="container inquiry-layout">
+        <div class="inquiry-intro reveal">
+          <span class="eyebrow">Appointment inquiry</span>
+          <h2>Let’s start with a simple <em>hello.</em></h2>
+          <p>For appointments, session details, and counselling inquiries. We usually respond within one working day.</p>
+          <div class="inquiry-contact">
+            <a href="tel:+919686926262">+91 9686926262</a>
+            <a href="mailto:eshwa.counsellingcentre@gmail.com">eshwa.counsellingcentre@gmail.com</a>
+          </div>
         </div>
-        <a class="btn btn-primary" href="mailto:eshwa.counsellingcentre@gmail.com">Start the Conversation</a>
+
+        <form class="inquiry-form reveal delay-1" action="https://formsubmit.co/eshwa.counsellingcentre@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New appointment inquiry - ESHWA Counselling Centre">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_honey" value="">
+          <div class="inquiry-form-heading">
+            <div>
+              <h2>Send an inquiry</h2>
+              <p>Share only what feels comfortable.</p>
+            </div>
+            <span class="inquiry-mark" aria-hidden="true">✦</span>
+          </div>
+
+          <div class="form-fields">
+            <label class="form-field">Your name <span>*</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="form-field">Phone number <span>*</span>
+              <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+            <label class="form-field">Email address <span>*</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="form-field">Session preference
+              <select name="session_preference">
+                <option value="Online session">Online session</option>
+                <option value="In-person session">In-person session</option>
+              </select>
+            </label>
+            <label class="form-field form-field-wide">Anything you would like us to know?
+              <textarea name="message" rows="4" placeholder="You can keep this brief. Please avoid sharing sensitive personal or health details here."></textarea>
+            </label>
+          </div>
+          <button class="btn btn-primary inquiry-submit" type="submit">Send appointment inquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-privacy">Your details will be sent to ESHWA Counselling Centre by email to help respond to your inquiry.</p>
+        </form>
       </div>
     </section>
   </main>
@@ -108,12 +147,12 @@
     <div class="container footer-wrap">
       <div>
         <strong>ESHWA Counselling Centre</strong>
-        <p>We are here for you.</p>
+        <p>A place where every mind matters.</p>
       </div>
       <div class="footer-links">
-        <span>+91 9686926262</span>
+        <a href="tel:+919686926262">+91 9686926262</a>
         <a href="mailto:eshwa.counsellingcentre@gmail.com">eshwa.counsellingcentre@gmail.com</a>
-        <span>Chandapura • Electronic City • KR Puram • Jalahalli</span>
+        <span>Chandapura • Electronic City • KR Puram • Nagasandra</span>
       </div>
     </div>
   </footer>

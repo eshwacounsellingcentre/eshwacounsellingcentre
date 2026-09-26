@@ -776,3 +776,161 @@ a {
   font-weight: 500;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
+/* Appointment inquiry form */
+.contact-form-section {
+  background: linear-gradient(135deg, rgba(36, 59, 58, 0.05), rgba(232, 123, 94, 0.08));
+}
+
+.inquiry-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(32px, 7vw, 88px);
+  align-items: center;
+}
+
+.inquiry-intro h2 {
+  max-width: 540px;
+  margin: 18px 0;
+  color: var(--brand-dark);
+  font: 700 clamp(2.8rem, 5.5vw, 5rem)/0.98 "Cormorant Garamond", serif;
+}
+
+.inquiry-intro h2 em {
+  color: #e87b5e;
+}
+
+.inquiry-intro > p {
+  max-width: 420px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.inquiry-contact {
+  display: grid;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.inquiry-contact a {
+  width: fit-content;
+  color: var(--brand-dark);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.inquiry-form {
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid rgba(79, 107, 72, 0.12);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.inquiry-form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.inquiry-form-heading h2 {
+  margin: 0 0 6px;
+  color: var(--brand-dark);
+  font: 700 clamp(1.8rem, 3vw, 2.5rem)/1.05 "Cormorant Garamond", serif;
+}
+
+.inquiry-form-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.inquiry-mark {
+  color: #e87b5e;
+  font-size: 1.7rem;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 8px;
+  color: var(--brand-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.form-field > span {
+  display: inline;
+  color: #d9664e;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid rgba(184, 147, 71, 0.38);
+  border-radius: 12px;
+  background: #fbfaf7;
+  color: var(--text);
+  font: 400 0.96rem "Inter", sans-serif;
+}
+
+.form-field textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 3px solid rgba(232, 123, 94, 0.18);
+  border-color: #e87b5e;
+}
+
+.form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.inquiry-submit {
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  color: #173536;
+  background: #e87b5e;
+  box-shadow: 0 12px 28px rgba(232, 123, 94, 0.2);
+  cursor: pointer;
+  font: 600 0.98rem "Inter", sans-serif;
+}
+
+.inquiry-submit span {
+  margin-left: 8px;
+  font-size: 1.15rem;
+}
+
+.form-privacy {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .inquiry-layout { grid-template-columns: 1fr; }
+  .inquiry-intro h2 { max-width: 620px; }
+}
+
+@media (max-width: 560px) {
+  .form-fields { grid-template-columns: 1fr; }
+  .form-field-wide { grid-column: auto; }
+}
